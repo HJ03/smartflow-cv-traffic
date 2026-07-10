@@ -1,0 +1,24 @@
+# Python build and environment files
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Raw local video assets and model weights
+*.mp4
+*.avi
+*.pt
+*.weights
+
+# Scratchpads and alternative local test scripts
+backend/appForSingleVideo.py
+backend/test_*.py
+backend/notebooks/
+
+# Node environment modules and Next.js builds
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+.DS_Store
+
+# Explicit App Scratchpads
+frontend/src/app/pageForSingleVideo.tsx
