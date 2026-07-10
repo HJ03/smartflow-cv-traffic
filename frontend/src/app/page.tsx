@@ -15,7 +15,8 @@ export default function Dashboard() {
 
     const fetchTelemetry = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/api/telemetry/${selectedFeed}`);
+        // const res = await fetch(`http://localhost:8000/api/telemetry/${selectedFeed}`);
+        const res = await fetch(`https://sf-cv-trfc-backend.onrender.com/api/telemetry/${selectedFeed}`);
         const data = await res.json();
         setAllocatedTime(data.signal_time);
       } catch (err) {
@@ -113,7 +114,8 @@ export default function Dashboard() {
             {activeFeed ? (
               <img 
                 key={selectedFeed} // Force re-render element when feed ID key changes
-                src={`http://localhost:8000/api/stream/${selectedFeed}`} 
+                // src={`http://localhost:8000/api/stream/${selectedFeed}`}
+                src={`https://sf-cv-trfc-backend.onrender.com/api/stream/${selectedFeed}`} 
                 alt="Active Processing Stream Pipeline Feed" 
                 className="w-full h-full object-contain"
               />
