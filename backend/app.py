@@ -21,15 +21,15 @@ VEHICLE_CLASSES = {2, 3, 5, 7}
 TIME_INTERVALS = [60, 40, 20, 10]
 
 # Mapping feed IDs to their respective video file paths
-# VIDEO_FEEDS = {
-#     "1": "TrafficVideo.mp4",
-#     "2": "TrafficVideo2.mp4"
-# }
-
 VIDEO_FEEDS = {
-    "1": "https://res.cloudinary.com/bxnkuruz/video/upload/v1783675631/TrafficVideo_l3z2cx.mp4",
-    "2": "https://res.cloudinary.com/bxnkuruz/video/upload/v1783675640/TrafficVideo2_chz2c6.mp4"
+    "1": "TrafficVideo.mp4",
+    "2": "TrafficVideo2.mp4"
 }
+
+# VIDEO_FEEDS = {
+#     "1": "https://res.cloudinary.com/bxnkuruz/video/upload/v1783675631/TrafficVideo_l3z2cx.mp4",
+#     "2": "https://res.cloudinary.com/bxnkuruz/video/upload/v1783675640/TrafficVideo2_chz2c6.mp4"
+# }
 
 def analyze_traffic_frame(frame):
     h, w, _ = frame.shape

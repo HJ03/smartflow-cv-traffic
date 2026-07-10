@@ -4,7 +4,7 @@ backend/__pycache__/
 *.pyc
 
 # Raw local video assets and model weights
-*.mp4
+# *.mp4
 *.avi
 *.pt
 *.weights
@@ -22,3 +22,4 @@ frontend/out/
 
 # Explicit App Scratchpads
 frontend/src/app/pageForSingleVideo.tsx
+backend/TrafficVideo2-1.mp4
